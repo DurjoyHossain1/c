@@ -1,6 +1,3 @@
-body {
-  width: 1920px;
-}
 
 @font-face {
   font-family: bb;
@@ -10,6 +7,7 @@ html,
 body {
   font-family: "Roboto", sans-serif;
   max-width: 1920px;
+  width: 100%;
   margin: auto;
 }
 
@@ -33,9 +31,9 @@ body {
   font-size: 40px;
   border: none;
 }
-.container {
+/* .container {
   width: 1300px;
-}
+} */
 .btn {
   padding: 14px 26px;
   font-weight: 700;
@@ -256,8 +254,7 @@ background: red;
   min-height: 36vh;
 }
 .our_service .boder h3 {
-  /* color: red; */
-  font-size: 26px;
+  font-size: 2rem;
   font-weight: 300;
   margin-top: 45px;
   margin-bottom: 25px;
@@ -265,6 +262,7 @@ background: red;
 }
 .our_service .boder p{
   
+font-size: 1.8rem;
 }
 .our_service .our_service_text h3 {
   font-size: 31px;
@@ -732,13 +730,16 @@ background: red;
 }
 
 .monthly_button {
-  margin: auto;
-  margin-left: 113px;
   margin-top: -36px;
   background: #147e90;
   width: 178px;
   color: #fff;
   padding: 0px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .our_pricing_text {
 }
@@ -1087,8 +1088,8 @@ footer {
 .accordion-item:first-of-type .accordion-button {
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
-  margin-top: -62px;
-  border-radius: 50px;
+  /* margin-top: -62px;
+  border-radius: 50px; */
 }
 .py-3 {
   padding: 25px 361px;
@@ -1097,3 +1098,60 @@ footer {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
 }
+
+.grid-colum-items{
+  
+display: flex;
+  
+align-items: center;
+  
+justify-content: space-between;
+  
+margin-top: 34px;
+  
+margin-bottom: 37px;
+  
+text-align: center;
+}
+
+
+
+ @media (min-width: 578px) and (max-width: 767px) {
+  .py-3 {
+    padding: 0px;
+  }
+} 
+@media (max-width: 576px) {
+  .banner_text p {
+    padding: 0%;
+}
+.py-3 {
+  padding: 0px;
+}
+.navbar-dark .navbar-nav .nav-link {
+ margin-right: 0;
+ text-align: center;
+ font-size: 1.5rem;
+}.banner_text a{
+  font-size: 1rem;
+}
+.gap-5 {
+  gap: 0rem!important;
+}
+.about_us_img::before, .location {
+  border: none;
+}
+.our_service .our_service_text span, .our_team span , .our_protfolio span , .faq span,.our_testomonial .our_testomonial_text span::before ,.our_testomonial .our_testomonial_text span,.our_pricing .our_pricing_text span,.Grid-colum {
+  
+  
+  display: none;
+}
+.boder{
+  margin: 0%;
+  width: 100%;
+}
+.item-one{
+  margin-top: 0px !important;
+}
+}
+
